@@ -1,5 +1,6 @@
 E-commerce Site - view project live here alecsquire.github.io/Static-Landing-Page/
 
+![E-commerce Site](https://images.unsplash.com/photo-1617932305857-bf37694cbd27?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
 
 An elegant and responsive e-commerce site built using HTML, CSS, and JavaScript, incorporating modern design principles and performance optimizations like lazy loading and responsive layouts.
 
