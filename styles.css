@@ -1,7 +1,6 @@
 :root {
   --nav-font-color: #2f2f2f;
   --nav-background-color: #ffffff;
-
   --button-color: #fbe356;
   --font-h1: rgb(0, 0, 0);
   --font-p1: #3f3f3f;
@@ -12,6 +11,7 @@
   padding: 0;
   box-sizing: inherit;
 }
+
 button {
   margin: 0;
   padding: 0;
@@ -20,6 +20,7 @@ button {
   font: inherit;
   cursor: pointer;
 }
+
 ul,
 li {
   list-style: none;
@@ -30,9 +31,11 @@ li {
 li {
   padding: 10px;
 }
+
 a:hover {
   color: grey;
 }
+
 a img:hover {
   transform: scale(1.2);
   transition: transform 0.3s ease-in-out;
@@ -48,6 +51,7 @@ a li {
   color: var(--font-p1, #3f3f3f);
   transition: transform 0.3s ease;
 }
+
 a {
   text-decoration: none;
   color: var(--font-p1, #3f3f3f);
@@ -59,6 +63,7 @@ html {
   font-size: 62.5%;
   width: 100vw;
 }
+
 body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
@@ -68,86 +73,9 @@ body {
   background-color: #fff;
   overflow-x: hidden;
 }
-.nav {
-  position: relative;
-  cursor: pointer;
-}
-.nav__icon--search:hover,
-.nav__icon--heart:hover,
-.nav__icon--account:hover {
-  background-color: rgba(0, 0, 0, 0.1);
-}
-.nav__icon--cart:hover {
-  background-color: #ffdc16;
-}
 
-.nav__container--1 {
-  background-color: var(--nav-background-color);
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
-  flex-grow: 1;
-  flex-wrap: nowrap;
-}
-
-.nav__item ul {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.nav__item {
-  font-size: 1.2rem;
-}
-.nav__container--2 {
-  justify-content: flex-end;
-  align-items: center;
-  display: flex;
-  flex: 2;
-  max-width: 40%;
-  max-height: 0.5rem;
-}
-.nav__icon li {
-  object-fit: contain;
-  cursor: pointer;
-  padding: 1rem;
-  max-width: 2rem;
-  height: 2rem;
-}
-.nav__icon img {
-  max-width: 100%;
-  max-width: 2rem;
-  height: 2rem;
-}
-
-.nav__icon {
-  border: 0.1rem solid #ddd;
-  border-radius: 0.6rem;
-  margin-right: 0.5rem;
-  justify-content: center;
-  align-items: center;
-}
-
-.nav--logo {
-  width: 5rem;
-  height: 5rem;
-  cursor: pointer;
-}
-
-svg {
-  width: 2rem;
-  height: 2rem;
-}
-.nav__icon--cart {
-  background-color: var(--button-color);
-}
-button {
-  padding-left: 2rem;
-  padding-right: 2rem;
-  color: #2f2f2f;
+.navbar {
+  margin-bottom: 20px;
 }
 
 .swiper {
@@ -164,6 +92,7 @@ button {
   width: 100vw;
   height: 85vh;
 }
+
 .swiper-slide img {
   width: 100%;
   height: 100%;
@@ -175,6 +104,7 @@ button {
   justify-content: flex-start;
   align-items: center;
 }
+
 .swiper-text-overlay1,
 .swiper-text-overlay2,
 .swiper-text-overlay3 {
@@ -191,6 +121,7 @@ button {
   border-radius: 1rem;
   padding: 1rem;
 }
+
 .swiper-text-overlay3 {
   transform: translate(-99%, -126%);
   text-align: center;
@@ -212,12 +143,14 @@ button {
   background-color: #a9562e;
   color: white;
 }
+
 .see-more p {
   color: white;
   font-size: 2rem;
   font-weight: 600;
   padding: 1rem;
 }
+
 .see-more a {
   color: white;
   font-size: 2rem;
@@ -225,6 +158,7 @@ button {
   padding: 1rem;
   transition: font-size 0.5s ease-in-out;
 }
+
 .see-more a:hover {
   font-size: 2.5rem;
   transition: font-size 0.5s ease-in-out;
@@ -251,17 +185,20 @@ button {
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(2, 1fr);
 }
+
 .grid-item {
   border: 1px solid #ccc;
   padding: 20px;
   overflow: hidden;
 }
+
 .grid-item img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: transform 0.3s ease; /* Add transition for smooth scaling */
 }
+
 .grid-item:hover img {
   transition: transform 0.3s ease;
 }
@@ -288,8 +225,6 @@ button {
   overflow: clip;
   position: sticky;
   top: 0;
-  /* margin-left: 2rem;
-  margin-right: 4rem; */
 }
 
 .promo-box-1 {
@@ -301,13 +236,13 @@ button {
 
 .promo-box-1__background-div {
   position: relative;
-
   width: 100%;
   height: 100%;
   background-size: contain;
   background-repeat: no-repeat;
   background-image: url("https://images.riverisland.com/image/upload/f_auto,q_auto/0_20231220_186ECOM23_WK50_MEN_CONTENT_BOXES_IMAGE_7.jpg");
 }
+
 .promo-box__text-container1 {
   display: flex;
   flex-grow: 3;
@@ -317,6 +252,7 @@ button {
   color: var(--nav-font-color);
   margin-top: 6rem;
 }
+
 .promo-box__text-container1 h2 {
   font-family: Serif;
   line-height: 3;
@@ -324,13 +260,14 @@ button {
   font-size: 6rem;
 }
 
-.grid-contianer-1 {
+.grid-container-1 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 10px;
   margin: 20px;
 }
+
 footer {
   margin-top: 5rem;
   display: flex;
@@ -339,6 +276,7 @@ footer {
   justify-content: space-around;
   width: 100vw;
 }
+
 h2 {
   text-transform: uppercase;
   color: #2f2f2f;
@@ -353,19 +291,36 @@ h2 {
   height: 50vh;
   z-index: 2;
 }
+
 .promo-box__image-wrapper {
   width: 100%;
   height: 100%;
   display: flex;
 }
+
 .promo-box__image {
 }
+
 .promo-box__title {
   color: white;
   display: flex;
   z-index: 3;
-
-  /* line-height: 1.5; */
   letter-spacing: 0.1rem;
   font-size: 5rem;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .swiper {
+    height: 300px;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+  }
+
+  .collections-grid,
+  .promo-grid {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
 }
